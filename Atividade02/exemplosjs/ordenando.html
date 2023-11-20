@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ordenando Página</title>
+  <script src="ordenando.js"></script>
+  <link rel="stylesheet" href="ordenando.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <h1 class="mb-4">Ordenação em JavaScript</h1>
+
+    <div class="form-group valor-input">
+      <label for="valor">Valor:</label>
+      <input type="number" class="form-control" id="valor">
+    </div>
+  
+
+    <button class="btn btn-primary mb-3" onclick="add()">Adicionar</button>
+  
+    <hr> 
+    <div class="form-group">
+      <label for="algoritmo">Escolha um algoritmo:</label>
+      <select class="form-control" id="algoritmo">
+        <option value="bubble_sort" selected>Bubble Sort</option>
+        <option value="selection_sort">Selection Sort</option>
+        <option value="quick_sort">Quick Sort</option>
+      </select>
+      <div class="btn-group mt-3">
+        <button class="btn btn-primary rounded" onclick="ordenar()">Ordenar</button>
+        <button class="btn btn-primary rounded ml-3" onclick="misturar()">Misturar</button>
+      </div>
+    </div>
+  
+    
+  
+    <hr>
+  
+    <div class="resultado">
+      <h2>Resultado:</h2>
+      <ul class="list-group" id="valores"></ul>
+    </div>
+</body>
+</html>
